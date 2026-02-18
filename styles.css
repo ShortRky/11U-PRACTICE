@@ -164,6 +164,12 @@ em {
 .app-container {
     display: flex;
     min-height: 100vh;
+    width: 100%;
+    max-width: 1200px; /* constrain overall layout width */
+    margin: 0 auto;    /* center horizontally on all devices */
+    align-items: flex-start;
+    padding: 0 var(--spacing-md);
+    gap: var(--spacing-lg);
 }
 
 /* Sidebar Navigation */
@@ -175,6 +181,8 @@ em {
     display: flex;
     flex-direction: column;
     position: fixed;
+    top: 0;
+    left: 0;
     height: 100vh;
     overflow-y: auto;
     z-index: 100;
@@ -253,7 +261,7 @@ em {
 /* Main Content Area */
 .main-content {
     flex: 1;
-    margin-left: 280px;
+    margin: 0 auto;
     padding: var(--spacing-xxl);
     max-width: 900px;
 }
@@ -1056,6 +1064,13 @@ em {
     
     .features-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+/* On wider screens, reserve space for the fixed sidebar so the centered container doesn't overlap it */
+@media (min-width: 769px) {
+    .app-container {
+        padding-left: 280px; /* leave room for the fixed sidebar */
     }
 }
 
