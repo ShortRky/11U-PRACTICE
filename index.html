@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaliEdu - Your Calm Guide to 11U Math</title>
+    <meta name="description" content="A gentle companion to the Ontario 11U Math curriculum. Clear explanations, step-by-step learning, and practice questions to help you succeed.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-emoji">🎭</div>
+            <div class="loading-text">Awakening your inner genius...</div>
+        </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="backgroundMusic" loop preload="auto">
+        <source src="SpotiDown.App - too late to be sorry. - Ultra Slowed _ Reverb - CXSMPX.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Music Toggle Button -->
+    <button class="music-toggle" id="musicToggle" aria-label="Toggle background music">
+        <span class="music-icon">🔇</span>
+    </button>
+
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" role="navigation" aria-label="Main navigation">
+            <div class="sidebar-header">
+                <div class="logo">✧ KaliEdu</div>
+                <div class="logo-subtitle">Frieren's Functions</div>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <!-- Navigation items will be populated by JavaScript -->
+            </ul>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Home Page -->
+            <section id="home" class="page-section">
+                <div class="hero">
+                    <h1 class="fade-in" id="heroTitle"></h1>
+                    <p class="hero-tagline fade-in fade-in-delay-1" id="heroTagline"></p>
+                    <div class="hero-description fade-in fade-in-delay-2" id="heroDescription"></div>
+                    <button class="cta-button fade-in fade-in-delay-3" onclick="navigateTo('functions')">
+                        <span>Start Learning</span>
+                        <span>→</span>
+                    </button>
+                    <span class="cta-subtext fade-in fade-in-delay-4">Begin your journey with Functions</span>
+                </div>
+
+                <!-- Features -->
+                <div class="features-grid" id="featuresGrid">
+                    <!-- Features will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Functions Topic Page -->
+            <section id="functions" class="page-section" style="display: none;">
+                <!-- Content will be populated by JavaScript -->
+            </section>
+
+            <!-- Trigonometry Topic Page -->
+            <section id="trigonometry" class="page-section" style="display: none;">
+                <!-- Content will be populated by JavaScript -->
+            </section>
+
+            <!-- Sequences Topic Page -->
+            <section id="sequences" class="page-section" style="display: none;">
+                <!-- Content will be populated by JavaScript -->
+            </section>
+
+            <!-- Finance Topic Page -->
+            <section id="finance" class="page-section" style="display: none;">
+                <!-- Content will be populated by JavaScript -->
+            </section>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="data.js"></script>
+    <script src="scrpt.js"></script>
+    <script src="animations.js"></script>
+</body>
+</html>

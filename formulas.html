@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula Reference - KaliEdu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Formula-specific styles */
+        .formula-page {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .formula-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #C9BFA6;
+        }
+        
+        .formula-header h1 {
+            color: #7B9E87;
+            margin-bottom: 0.5rem;
+        }
+        
+        .formula-section {
+            background: #F5F0E6;
+            border: 1px solid #C9BFA6;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .formula-section h2 {
+            color: #5D7A66;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #C9BFA6;
+        }
+        
+        .formula-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+        
+        .formula-card {
+            background: #F4EBD9;
+            border: 1px solid #C9BFA6;
+            border-radius: 8px;
+            padding: 1rem;
+        }
+        
+        .formula-card h3 {
+            color: #3D3632;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .formula-text {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.1rem;
+            color: #5D7A66;
+            background: #E8E0D4;
+            padding: 0.5rem;
+            border-radius: 4px;
+            display: block;
+            margin-top: 0.5rem;
+        }
+        
+        .formula-description {
+            font-size: 0.9rem;
+            color: #6B625A;
+            margin-top: 0.5rem;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 1rem;
+            color: #7B9E87;
+            font-weight: 600;
+        }
+        
+        .back-link:hover {
+            color: #5D7A66;
+        }
+        
+        /* Print-friendly */
+        @media print {
+            body { background: white; }
+            .formula-section { break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <div class="formula-page">
+        <a href="index.html" class="back-link">← Back to KaliEdu</a>
+        
+        <div class="formula-header">
+            <h1>📐 Formula Reference</h1>
+            <p>All the formulas you need for 11U Math</p>
+        </div>
+        
+        <!-- Functions Section -->
+        <div class="formula-section">
+            <h2>📊 Functions</h2>
+            <div class="formula-grid">
+                <div class="formula-card">
+                    <h3>Linear Function</h3>
+                    <span class="formula-text">f(x) = mx + b</span>
+                    <p class="formula-description">m = slope, b = y-intercept</p>
+                </div>
+                <div class="formula-card">
+                    <h3>Slope Formula</h3>
+                    <span class="formula-text">m = (y₂ - y₁) / (x₂ - x₁)</span>
+                    <p class="formula-description">Rise over run</p>
+                </div>
+                <div class="formula-card">
+                    <h3>Point-Slope Form</h3>
+                    <span class="formula-text">y - y₁ = m(x - x₁)</span>
+                    <p class="formula-description">Using a point (x₁, y₁)</p>
+                </div>
+                <div class="formula-card">
+                    <h3>Quadratic Standard</h3>
+                    <span class="formula-text">f(x) = ax² + bx + c</span>
+                    <p class="formula-description">a ≠ 0, creates parabola</p>
+                </div>
+                <div class="formula-card">
+                    <h3>Quadratic Vertex</h3>
+                    <span class="formula-text">f(x) = a(x - h)² + k</span>
+                    <p class="formula-description">Vertex at (h, k)</p>
+                </div>
+                <div class="formula-card">
+                    <h3>Axis of Symmetry</h3>
+                    <span class="formula-text">x = -b / (2a)</span>
+                    <p class="formula-description">For ax² + bx + c</p>
+                </div>
+                <div class="formula-card">
+                    <h3>Quadratic Formula</h3>
+                    <span class="formula-text">x = (-b ± √(b²-4ac)) / 2a</span>
+                    <p class="formula-description">For solving ax² + bx + c = 0</p>
+                </div>
+                <div class="formula-card">
+                    <h3>Exponential Function</h3>
+                    <span class="formula-text">f(x) = a · bˣ</span>
+                    <p class="formula-description">a = initial value, b = base</p>
+                </div>
+                <div class="formula-card">
+                    <h3>Exponential Growth</h3>
+                    <span class="formula-text">A = P(1 + r)ᵗ</span>
+                    <p class="formula-description">P = principal, r = rate, t = time</p>
+                </div>
+                <div class="formula-card">
+                    <h3>Exponential Decay</h3>
+                    <span class="formula-text">A = P(1 - r)ᵗ</span>
+                    <p class="formula-description">For decay problems</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Trigonometry Section -->
+        <div class="formula-section">
+            <h2>📐 Trigonometry</h2>
+            <div class="formula-grid">
+                <div class="formula-card">
+                    <h3>SOH (Sine)</h3>
+                    <span class="formula-text">sin θ = Opp / Hyp</span>
+                    <p class="formula-description">Sine = Opposite / Hypotenuse</p>
+                </div>
+                <div class="formula-card">
+                    <h3>CAH (Cosine)</h3>
+                    <span class="formula-text">cos θ = Adj / Hyp</span>
+                    <p class="formula-description">Cosine = Adjacent / Hypotenuse</p>
+                </div>
+                <div class="formula-card">
+                    <h3>TOA (Tangent)</h3>
+                    <span class="formula-text">tan θ = Opp / Adj</span>
+                    <p class="formula-description">Tangent = Opposite / Adjacent</p>
+                </div>
+                <div class="formula-card">
+                    <h3>Pythagorean Identity</h3>
+                    <span class="formula-text">sin²θ + cos²θ = 1</span>
+                    <p class="formula-description">Fundamental trig identity</p>
+                </div>
+                <div class="formula-card">
+                    <h3>Pythagorean Theorem</h3>
+                    <span class="formula-text">a² + b² = c²</span>
+                    <p class="formula-description">For right triangles</p>
+                </div>
+                <div class="formula-card">
+                    <h3>Law of Sines</h3>
+                    <span class="formula-text">a/sin A = b/sin B = c/sin C</span>
+                    <p class="formula-description">For any triangle</p>
+                </div>
+                <div class="formula-card">
+                    <h3>Law of Cosines</h3>
+                    <span class="formula-text">c² = a² + b² - 2ab cos C</span>
+                    <p class="formula-description">Generalized Pythagorean</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sequences & Series Section -->
+        <div class="formula-section">
+            <h2>📋 Sequences & Series</h2>
+            <div class="formula-grid">
+                <div class="formula-card">
+                    <h3>Arithmetic Sequence</h3>
+                    <span class="formula-text">aₙ = a₁ + (n-1)d</span>
+                    <p class="formula-description">nth term of arithmetic sequence</p>
+                </div>
+                <div class="formula-card">
+                    <h3>Arithmetic Series Sum</h3>
+                    <span class="formula-text">Sₙ = n(a₁ + aₙ) / 2</span>
+                    <p class="formula-description">Sum of n terms</p>
+                </div>
+                <div class="formula-card">
+                    <h3>Arithmetic Series (alt)</h3>
+                    <span class="formula-text">Sₙ = n[2a₁ + (n-1)d] / 2</span>
+                    <p class="formula-description">Using first term and d</p>
+                </div>
+                <div class="formula-card">
+                    <h3>Geometric Sequence</h3>
+                    <span class="formula-text">aₙ = a₁ · rⁿ⁻¹</span>
+                    <p class="formula-description">nth term of geometric sequence</p>
+                </div>
+                <div class="formula-card">
+                    <h3>Geometric Series Sum</h3>
+                    <span class="formula-text">Sₙ = a₁(1 - rⁿ) / (1 - r)</span>
+                    <p class="formula-description">For r ≠ 1</p>
+                </div>
+                <div class="formula-card">
+                    <h3>Infinite Geometric Series</h3>
+                    <span class="formula-text">S∞ = a₁ / (1 - r)</span>
+                    <p class="formula-description">Only if |r| < 1</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Quick Reference -->
+        <div class="formula-section">
+            <h2>⭐ Special Angles (Trig)</h2>
+            <table style="width: 100%; border-collapse: collapse;">
+                <thead>
+                    <tr style="background: #E8E0D4;">
+                        <th style="padding: 0.75rem; text-align: left;">Angle</th>
+                        <th style="padding: 0.75rem; text-align: left;">sin</th>
+                        <th style="padding: 0.75rem; text-align: left;">cos</th>
+                        <th style="padding: 0.75rem; text-align: left;">tan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td style="padding: 0.5rem;">0°</td><td>0</td><td>1</td><td>0</td></tr>
+                    <tr style="background: #F4EBD9;"><td style="padding: 0.5rem;">30°</td><td>1/2</td><td>√3/2</td><td>1/√3</td></tr>
+                    <tr><td style="padding: 0.5rem;">45°</td><td>√2/2</td><td>√2/2</td><td>1</td></tr>
+                    <tr style="background: #F4EBD9;"><td style="padding: 0.5rem;">60°</td><td>√3/2</td><td>1/2</td><td>√3</td></tr>
+                    <tr><td style="padding: 0.5rem;">90°</td><td>1</td><td>0</td><td>undefined</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="formula-section">
+            <h2>🔤 Notation Guide</h2>
+            <div class="formula-grid">
+                <div class="formula-card">
+                    <h3>Function Notation</h3>
+                    <span class="formula-text">f(x)</span>
+                    <p class="formula-description">"f of x" - function f at x</p>
+                </div>
+                <div class="formula-card">
+                    <h3>Sequence Terms</h3>
+                    <span class="formula-text">aₙ</span>
+                    <p class="formula-description">nth term of sequence a</p>
+                </div>
+                <div class="formula-card">
+                    <h3>Sigma Notation</h3>
+                    <span class="formula-text">Σ</span>
+                    <p class="formula-description">Sum of terms</p>
+                </div>
+                <div class="formula-card">
+                    <h3>Square Root</h3>
+                    <span class="formula-text">√x</span>
+                    <p class="formula-description">Square root of x</p>
+                </div>
+            </div>
+        </div>
+        
+        <p style="text-align: center; color: #9A8F82; margin-top: 2rem;">
+            Keep this reference handy while practicing!
+        </p>
+    </div>
+</body>
+</html>

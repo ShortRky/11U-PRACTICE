@@ -1,0 +1,138 @@
+# KaliEdu - MVP Documentation
+
+## Overview
+
+KaliEdu is a calm, engaging companion to the Ontario 11U Math curriculum. Inspired by the peaceful aesthetic of Frieren (from "Frieren: Beyond Journey's End"), this MVP delivers core value to Grade 11 students: clarifying textbook content, providing step-by-step learning, and reducing math anxiety.
+
+## MVP Features
+
+### ✅ Completed Features
+
+1. **Homepage**
+   - Welcome section with tagline
+   - Feature cards showcasing core value propositions
+   - Call-to-action button for navigation
+
+2. **Navigation**
+   - Sidebar with topic links
+   - Active state indicators
+   - Responsive design for mobile/desktop
+
+3. **Functions Topic Page (Flagship)**
+   - Introduction to functions
+   - Key concepts:
+     - What is a Function?
+     - Function Notation
+     - Domain and Range
+     - Linear Functions
+     - Quadratic Functions
+   - "Remember This" boxes (key formulas/rules)
+   - "Consider This" boxes (thinking tips/common mistakes)
+
+4. **Practice Questions**
+   - 8 practice questions covering Functions topic
+   - Multiple choice and short answer formats
+   - Show Hint functionality
+   - Show Solution functionality
+   - Visual feedback for correct/incorrect answers
+
+5. **Frieren-Inspired Aesthetic**
+   - Warm beige backgrounds
+   - Muted sage green and blue accents
+   - Sepia-toned text boxes
+   - Soft, gentle typography
+   - Low-pressure visual design
+
+6. **Animations**
+   - Subtle hover effects on buttons and cards
+   - Smooth page transitions
+   - Staggered reveal animations
+   - Scroll-triggered content reveals
+   - Micro-interactions (ripple effects, bounces)
+
+### 📋 Technical Stack
+
+- **HTML5** - Semantic structure
+- **CSS3** - Styling with CSS variables
+- **JavaScript (ES6+)** - Interactivity and dynamic content
+- **Google Fonts** - Crimson Pro, Source Sans 3, JetBrains Mono
+
+### 📁 File Structure
+
+```
+├── index.html          # Main HTML structure
+├── styles.css         # Frieren-inspired styling
+├── data.js           # Content and practice questions
+├── scrpt.js          # Main JavaScript logic
+├── animations.js     # Subtle animations
+├── readme            # This documentation
+└── Nelson+Functions+11+Textbook.pdf  # Reference textbook
+```
+
+### 🚀 Running the Project
+
+Simply open `index.html` in any modern web browser. No build process or server required.
+
+```bash
+# Option 1: Open directly
+open index.html
+
+# Option 2: Use a local server (recommended for best experience)
+npx serve .
+# or
+python -m http.server 8000
+```
+
+## Design Decisions
+
+### Color Palette
+
+| Color | Hex | Usage |
+|-------|-----|-------|
+| Warm Cream | `#F5F0E6` | Primary background |
+| Sage Green | `#7B9E87` | Accents, success states |
+| Muted Blue | `#8BA4B4` | Secondary accents |
+| Sepia Light | `#F4EBD9` | Tip boxes, examples |
+| Warm Brown | `#3D3632` | Primary text |
+
+### Typography
+
+- **Headings**: Crimson Pro (serif) - elegant, readable
+- **Body**: Source Sans 3 (sans-serif) - clean, friendly
+- **Code**: JetBrains Mono - technical clarity
+
+### UX Principles
+
+1. **Calm over chaos**: No flashing animations or overwhelming content
+2. **Progressive disclosure**: Reveal hints and solutions on demand
+3. **Immediate feedback**: Visual cues for correct/incorrect answers
+4. **Mobile-first**: Works on all screen sizes
+
+## Content Sources
+
+The Functions topic content is based on the Nelson Functions 11 textbook, covering:
+- Relations vs Functions
+- Function notation (f(x))
+- Domain and Range
+- Linear functions (f(x) = mx + b)
+- Quadratic functions (f(x) = ax² + bx + c)
+
+## Future Enhancements (Post-MVP)
+
+- [ ] Additional topic pages (Trigonometry, etc.)
+- [ ] Interactive graphs with sliders
+- [ ] User accounts and progress tracking
+- [ ] Quiz system with scoring
+- [ ] Dark mode
+- [ ] Accessibility improvements (ARIA labels, screen reader support)
+
+## Browser Support
+
+- Chrome/Edge 90+
+- Firefox 88+
+- Safari 14+
+- Opera 76+
+
+## License
+
+This project is for educational purposes.
