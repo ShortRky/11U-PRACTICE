@@ -69,19 +69,8 @@ KaliEdu is a calm, engaging companion to the Ontario 11U Math curriculum. Inspir
 └── Nelson+Functions+11+Textbook.pdf  # Reference textbook
 ```
 
-### 🚀 Running the Project
-
-Simply open `index.html` in any modern web browser. No build process or server required.
-
-```bash
-# Option 1: Open directly
-open index.html
-
-# Option 2: Use a local server (recommended for best experience)
-npx serve .
-# or
-python -m http.server 8000
-```
+### 🚀 Full disclosure
+If any teachers see this, please dont hate me.. any students however. >:D Abuse ts shit
 
 ## Design Decisions
 
