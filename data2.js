@@ -29,19 +29,19 @@ const trigonometryData = {
         },
         "trig-ratios": {
             title: "Trigonometric Ratios",
-            content: "<h3>SOH-CAH-TOA</h3><ul><li><strong>SOH:</strong> sin theta = Opposite/Hypotenuse</li><li><strong>CAH:</strong> cos theta = Adjacent/Hypotenuse</li><li><strong>TOA:</strong> tan theta = Opposite/Adjacent</li></ul><h3>Reciprocals</h3><ul><li>csc = 1/sin</li><li>sec = 1/cos</li><li>cot = 1/tan</li></ul>",
+            content: "<h3>SOH-CAH-TOA</h3><ul><li><strong>SOH:</strong> sinθ = Opposite/Hypotenuse</li><li><strong>CAH:</strong> cosθ = Adjacent/Hypotenuse</li><li><strong>TOA:</strong> tanθ = Opposite/Adjacent</li></ul><h3>Reciprocals</h3><ul><li>csc = 1/sin</li><li>sec = 1/cos</li><li>cot = 1/tan</li></ul>",
             remember: [{ title: "SOH-CAH-TOA", content: "Sine:Opposite/Hyp | Cosine:Adj/Hyp | Tangent:Opposite/Adj" }],
             consider: [{ title: "Calculator", content: "Make sure calculator is in DEGREE mode!" }]
         },
         "special-angles": {
             title: "Special Angles",
-            content: "<table><tr><th>Angle</th><th>sin</th><th>cos</th><th>tan</th></tr><tr><td>0deg</td><td>0</td><td>1</td><td>0</td></tr><tr><td>30deg</td><td>1/2</td><td>sqrt3/2</td><td>1/sqrt3</td></tr><tr><td>45deg</td><td>sqrt2/2</td><td>sqrt2/2</td><td>1</td></tr><tr><td>60deg</td><td>sqrt3/2</td><td>1/2</td><td>sqrt3</td></tr><tr><td>90deg</td><td>1</td><td>0</td><td>undefined</td></tr></table>",
-            remember: [{ title: "30-60-90", content: "sin30=1/2, sin60=sqrt3/2" }, { title: "45-45-90", content: "sin45=cos45=sqrt2/2" }],
+            content: "<table><tr><th>Angle</th><th>sin</th><th>cos</th><th>tan</th></tr><tr><td>0°</td><td>0</td><td>1</td><td>0</td></tr><tr><td>30°</td><td>½</td><td>√³⁄₂</td><td>1/√3</td></tr><tr><td>45°</td><td>√²⁄₂</td><td>√²⁄₂</td><td>1</td></tr><tr><td>60°</td><td>√³⁄₂</td><td>½</td><td>√3</td></tr><tr><td>90°</td><td>1</td><td>0</td><td>undefined</td></tr></table>",
+            remember: [{ title: "30-60-90", content: "sin30=½, sin60=√³⁄₂" }, { title: "45-45-90", content: "sin45=cos45=√²⁄₂" }],
             consider: [{ title: "Reciprocals", content: "csc30=2, sec60=2, cot45=1" }]
         },
         "solving-triangles": {
             title: "Solving Triangles",
-            content: "<h3>Steps</h3><ol><li>Identify what you know</li><li>Choose trig ratio</li><li>Set up equation</li><li>Solve</li></ol><h3>Example</h3><p>theta=30deg, adjacent=10. Find hypotenuse.</p><p>cos30 = adj/h</p><p>sqrt3/2 = 10/h</p><p>h = 20/sqrt3 = 11.55</p>",
+            content: "<h3>Steps</h3><ol><li>Identify what you know</li><li>Choose trig ratio</li><li>Set up equation</li><li>Solve</li></ol><h3>Example</h3><p>θ=30deg, adjacent=10. Find hypotenuse.</p><p>cos30 = adj/h</p><p>√³⁄₂ = 10/h</p><p>h = 20/√3 = 11.55</p>",
             remember: [{ title: "Pythagorean", content: "a squared + b squared = c squared" }],
             consider: [{ title: "Check", content: "Hypotenuse is always longest side!" }]
         }
@@ -54,8 +54,8 @@ const trigonometryData = {
         },
         "identities": {
             title: "Trig Identities",
-            content: "<h3>Fundamental Identities</h3><ul><li>sin^2 θ + cos^2 θ = 1</li><li>1 + tan^2 θ = sec^2 θ</li><li>1 + cot^2 θ = csc^2 θ</li></ul><h3>Angle Sum/Difference</h3><ul><li>sin(A ± B) = sinA cosB ± cosA sinB</li><li>cos(A ± B) = cosA cosB ∓ sinA sinB</li><li>tan(A ± B) = (tanA ± tanB) / (1 ∓ tanA tanB)</li></ul>",
-            remember: [{ title: "Pythagorean", content: "sin^2 + cos^2 = 1 is core" }],
+            content: "<h3>Fundamental Identities</h3><ul><li>sin²θ + cos²θ = 1</li><li>1 + tan²θ = sec²θ</li><li>1 + cot²θ = csc²θ</li></ul><h3>Angle Sum/Difference</h3><ul><li>sin(A ± B) = sinA cosB ± cosA sinB</li><li>cos(A ± B) = cosA cosB ∓ sinA sinB</li><li>tan(A ± B) = (tanA ± tanB) / (1 ∓ tanA tanB)</li></ul>",
+            remember: [{ title: "Pythagorean", content: "sin² + cos² = 1 is core" }],
             consider: [{ title: "Strategy", content: "Use identities to transform expressions and solve equations." }]
         },
         "angle-conversion": {
@@ -73,15 +73,15 @@ const trigonometryData = {
     },
     
     practice: [
-        { id: 1, type: "multiple-choice", question: "What is sin(theta)?", options: [{ text: "Op/Adj", correct: false }, { text: "Op/Hyp", correct: true }, { text: "Adj/Hyp", correct: false }, { text: "Hyp/Op", correct: false }], hint: "SOH", solution: "sin = Opposite/Hypotenuse" },
-        { id: 2, type: "short-answer", question: "What is cos(60deg)?", hint: "Special angle!", solution: "cos60 = 1/2" },
+        { id: 1, type: "multiple-choice", question: "What is sin(θ)?", options: [{ text: "Op/Adj", correct: false }, { text: "Op/Hyp", correct: true }, { text: "Adj/Hyp", correct: false }, { text: "Hyp/Op", correct: false }], hint: "SOH", solution: "sin = Opposite/Hypotenuse" },
+        { id: 2, type: "short-answer", question: "What is cos(60°)?", hint: "Special angle!", solution: "cos60 = ½" },
         { id: 3, type: "multiple-choice", question: "Which ratio for opposite and adjacent?", options: [{ text: "Sine", correct: false }, { text: "Cosine", correct: false }, { text: "Tangent", correct: true }, { text: "Secant", correct: false }], hint: "TOA", solution: "Tangent = Op/Adj" },
-        { id: 4, type: "short-answer", question: "Find tan(45deg).", hint: "45-45-90", solution: "tan45 = 1" },
-        { id: 5, type: "multiple-choice", question: "What is sin(30deg)?", options: [{ text: "sqrt3/2", correct: false }, { text: "1/2", correct: true }, { text: "sqrt2/2", correct: false }, { text: "1", correct: false }], hint: "Special!", solution: "sin30 = 1/2" }
+        { id: 4, type: "short-answer", question: "Find tan(45°).", hint: "45-45-90", solution: "tan45 = 1" },
+        { id: 5, type: "multiple-choice", question: "What is sin(30°)?", options: [{ text: "√3/2", correct: false }, { text: "½", correct: true }, { text: "√2/2", correct: false }, { text: "1", correct: false }], hint: "Special!", solution: "sin30 = ½" }
         ,
-        { id: 6, type: "short-answer", question: "Give the coordinates for 150° on the unit circle.", hint: "Reflect 30° into QII", solution: "(−√3/2, 1/2)" },
-        { id: 7, type: "multiple-choice", question: "What is cos(π/3)?", options: [{ text: "1/2", correct: true }, { text: "√3/2", correct: false }, { text: "0", correct: false }, { text: "1", correct: false }], hint: "Convert to degrees", solution: "cos(π/3)=cos60°=1/2" },
-        { id: 8, type: "short-answer", question: "Simplify using identities: sin^2 x + cos^2 x", hint: "Pythagorean identity", solution: "1" }
+        { id: 6, type: "short-answer", question: "Give the coordinates for 150° on the unit circle.", hint: "Reflect 30° into QII", solution: "(−√3/2, ½)" },
+        { id: 7, type: "multiple-choice", question: "What is cos(π/3)?", options: [{ text: "½", correct: true }, { text: "√3/2", correct: false }, { text: "0", correct: false }, { text: "1", correct: false }], hint: "Convert to degrees", solution: "cos(π/3)=cos60°=½" },
+        { id: 8, type: "short-answer", question: "Simplify using identities: sin² x + cos² x", hint: "Pythagorean identity", solution: "1" }
     ]
 };
 
@@ -90,37 +90,33 @@ const exponentialData = {
     id: "exponential",
     title: "Exponential Functions",
     subtitle: "Growth, Decay & Applications",
-    intro: "<p>Exponential functions model rapid growth or decay: <strong>y = a·b^x</strong> where b>0.</p>",
+    intro: "<p>Exponential functions model rapid growth or decay: <strong>y = a·bˣ</strong> where b>0.</p>",
 
     subsections: [
-        { id: "intro-exp", title: "Introduction", icon: "📈" },
-        { id: "growth-decay", title: "Growth & Decay", icon: "📉" },
-        { id: "compound", title: "Compound Interest", icon: "🏦" },
+        { id: "basics", title: "Exponential Basics", icon: "📘" },
         { id: "graphs-exp", title: "Graphs & Transformations", icon: "🧭" },
         { id: "logs", title: "Logs & Solving", icon: "🔎" },
-        { id: "worked-examples", title: "Worked Examples", icon: "🧮" },
-        { id: "applications", title: "Real-World Apps", icon: "🌍" },
-        { id: "practice-exp", title: "Practice", icon: "✨" }
+        { id: "applications", title: "Real-World Apps", icon: "🌍" }
     ],
 
     subsectionContent: {
-        "intro-exp": {
-            title: "What is an Exponential Function?",
-            content: "<h3>Form</h3><p>y = a·b^x, where a ≠ 0 and b > 0. If b>1 → growth. If 0<b<1 → decay.</p>",
-            remember: [{ title: "Base", content: "b is the growth/decay factor" }],
-            consider: [{ title: "Domain/Range", content: "Domain: all real x. Range: y>0 if a>0 (unless vertical shifts)." }]
-        },
-        "growth-decay": {
-            title: "Growth and Decay",
-            content: "<h3>General</h3><p>Exponential growth: y = a·(1 + r)^t. Decay: y = a·(1 − r)^t.</p><h3>Doubling/Half-life</h3><p>Use b = 2^(1/T) for doubling time T, or b = (1/2)^(1/T) for half-life.</p>",
-            remember: [{ title: "Quick Check", content: "If b>1 it grows; if 0<b<1 it decays." }],
-            consider: [{ title: "Units", content: "t often represents time; ensure r matches period." }]
-        },
-        "compound": {
-            title: "Compound Interest",
-            content: "<h3>Formulas</h3><p>Compound n times per year: A = P(1 + r/n)^{nt}.</p><h3>Continuously</h3><p>A = Pe^{rt} when compounding continuously.</p>",
-            remember: [{ title: "Continuous", content: "Use e^{rt} for continuous compounding." }],
-            consider: [{ title: "APR vs APY", content: "Different compounding periods change final amount." }]
+        "basics": {
+            title: "Exponential Basics & Examples",
+            content: `
+                <h3>Form</h3>
+                <p>y = a·b^x where a ≠ 0 and b > 0. If b > 1 → growth; if 0 < b < 1 → decay.</p>
+
+                <h3>Key Formulas</h3>
+                <p>Discrete compound: A = P(1 + r/n)ⁿᵗ</p>
+                <p>Continuous compound: A = Pe^{rt}</p>
+
+                <h3>Worked Examples</h3>
+                <p><strong>Example 1 — Simple power:</strong> Solve 2ˣ = 32. Since 32 = 2^5, x = 5.</p>
+                <p><strong>Example 2 — Using logs:</strong> Solve 3·2ᵗ = 50. Isolate: 2ᵗ = 50/3. Take ln: t = ln(50/3) / ln 2 ≈ 4.058.</p>
+                <p><strong>Example 3 — Continuous growth:</strong> A = Pe½. If P=100, r=0.03, A=150 → e^{0.03t} = 1.5 → t = ln(1.5)/0.03 ≈ 13.51.</p>
+            `,
+            remember: [{ title: "Quick Steps", content: "Isolate the exponential, take logs if needed, solve for the variable." }],
+            consider: [{ title: "Units", content: "Match time units for r and t when using growth/decay formulas." }]
         },
         "graphs-exp": {
             title: "Graphs & Transformations",
@@ -130,31 +126,25 @@ const exponentialData = {
         },
         "logs": {
             title: "Logarithms & Solving Exponentials",
-            content: "<h3>Logs Definition</h3><p>log_b(y) = x is the inverse of b^x = y. That means x = log_b(y).</p><h3>Solving</h3><p>To solve a·b^x = y: isolate b^x → b^x = y/a → x = log_b(y/a). Use change-of-base: log_b(t) = ln(t)/ln(b).</p>",
-            remember: [{ title: "Inverse", content: "Logs undo exponentials: log_b(b^x) = x" }],
-            consider: [{ title: "Change-of-base", content: "If calculator lacks log_b, use ln: log_b(t) = ln(t)/ln(b)." }]
-        },
-        "worked-examples": {
-            title: "Worked Examples",
-            content: "<h3>Example 1 — Simple power</h3><p>Solve 2^x = 32. Since 32 = 2^5, x = 5.</p><h3>Example 2 — Using logs</h3><p>Solve 3·2^t = 50. Isolate: 2^t = 50/3. Take ln: t = ln(50/3) / ln 2 ≈ 4.058.</p><h3>Example 3 — Continuous growth</h3><p>A = Pe^{rt}. If P=100, r=0.03, A=150 → e^{0.03t} = 1.5 → t = ln(1.5)/0.03 ≈ 13.51.</p>",
-            remember: [{ title: "Steps", content: "Isolate the exponential, take logs, solve for the variable." }],
-            consider: [{ title: "Units", content: "When using ln for continuous models, r must match the time units of t." }]
+            content: "<h3>Logs Definition</h3><p>logB(y) = x is the inverse of bˣ = y. That means x = logB(y).</p><h3>Solving</h3><p>To solve a·bˣ = y: isolate bˣ → bˣ = y/a → x = logB(y/a). Use change-of-base: log_b(t) = ln(t)/ln(b).</p>",
+            remember: [{ title: "Inverse", content: "Logs undo exponentials: logB(bˣ) = x" }],
+            consider: [{ title: "Change-of-base", content: "If calculator lacks logB, use ln: logB(t) = ln(t)/ln(b)." }]
         },
         "applications": {
             title: "Real-World Applications",
-            content: "<h3>Population Growth</h3><p>Often modelled with P(t)=P_0 e^{rt} for continuous growth.</p><h3>Radioactive Decay</h3><p>Use N(t)=N_0 e^{−λt}. Half-life T_{1/2} relates: λ = ln 2 / T_{1/2}.</p><h3>Finance</h3><p>Compound interest: A = P(1+r/n)^{nt} or A = Pe^{rt} for continuous.</p>",
-            remember: [{ title: "Half-life", content: "λ = ln 2 / T_{1/2} lets you convert between half-life and decay constant." }],
+            content: "<h3>Population Growth</h3><p>Often modelled with P(t)=P₀ eʳᵗ for continuous growth.</p><h3>Radioactive Decay</h3><p>Use N(t)=N_0 e^{−λt}. Half-life T½ relates: λ = ln 2 / T½.</p><h3>Finance</h3><p>Compound interest: A = P(1+r/n)ⁿᵗ or A = Peʳᵗ for continuous.</p>",
+            remember: [{ title: "Half-life", content: "λ = ln 2 / T½ lets you convert between half-life and decay constant." }],
             consider: [{ title: "Model Choice", content: "Use discrete compound when compounding intervals are known; use continuous for continuously compounding processes." }]
         }
     },
 
     practice: [
-        { id: 1, type: "short-answer", question: "If y=3·2^x, what is y when x=4?", hint: "Compute 2^4", solution: "y=3·16=48" },
-        { id: 2, type: "short-answer", question: "Find t when A=Pe^{rt} with P=100, A=200, r=0.05", hint: "Take natural log", solution: "t = ln(2)/0.05 ≈ 13.86" },
+        { id: 1, type: "short-answer", question: "If y=3·2ˣ, what is y when x=4?", hint: "Compute 2^4", solution: "y=3·16=48" },
+        { id: 2, type: "short-answer", question: "Find t when A=Peʳᵗ with P=100, A=200, r=0.05", hint: "Take natural log", solution: "t = ln(2)/0.05 ≈ 13.86" },
         { id: 3, type: "multiple-choice", question: "Which base gives exponential decay?", options: [{ text: "b = 1.2", correct: false }, { text: "b = 0.8", correct: true }, { text: "b = 1", correct: false }, { text: "b = -2", correct: false }], hint: "0<b<1 means decay", solution: "b=0.8" },
         { id: 4, type: "short-answer", question: "Solve for x: 5^x = 125", hint: "Express 125 as power of 5", solution: "x = 3" },
         { id: 5, type: "short-answer", question: "Solve for t: 250 = 100 e^{0.04t}", hint: "Isolate e^{0.04t} then ln", solution: "t = ln(2.5)/0.04 ≈ 22.99" },
-        { id: 6, type: "short-answer", question: "A sum of $1000 is invested at 3% compounded monthly. What is A after 5 years?", hint: "Use A = P(1 + r/n)^{nt}", solution: "A = 1000(1+0.03/12)^{60} ≈ $1,161.62" },
+        { id: 6, type: "short-answer", question: "A sum of $1000 is invested at 3% compounded monthly. What is A after 5 years?", hint: "Use A = P(1 + r/n)ⁿᵗ", solution: "A = 1000(1+0.03/12)^{60} ≈ $1,161.62" },
         { id: 7, type: "short-answer", question: "A substance has half-life 8 years. What fraction remains after 20 years?", hint: "Use (1/2)^{t/T_{1/2}}", solution: "(1/2)^{20/8} = (1/2)^{2.5} ≈ 0.1768 (≈17.7%)" }
     ]
 };
@@ -215,31 +205,42 @@ if (typeof kaliEduData !== 'undefined' && kaliEduData && kaliEduData.topics) {
     // Replace or merge trigonometry topic so the app uses the expanded version
     kaliEduData.topics.trigonometry = Object.assign({}, kaliEduData.topics.trigonometry || {}, trigonometryData);
 
-    // Attach exponential content into the Functions subsection content keyed as 'exponential-functions'
+    // Attach exponential content into the Functions topic as separate, prefixed subsections
     if (!kaliEduData.topics.functions) kaliEduData.topics.functions = {};
+    if (!Array.isArray(kaliEduData.topics.functions.subsections)) kaliEduData.topics.functions.subsections = kaliEduData.topics.functions.subsections || [];
     if (!kaliEduData.topics.functions.subsectionContent) kaliEduData.topics.functions.subsectionContent = {};
 
-    // Build a combined HTML string for the exponential subsection from exponentialData
     if (typeof exponentialData !== 'undefined') {
-        let combined = exponentialData.intro || '';
+        // Merge subsection metadata (prefix ids to avoid collisions)
+        if (Array.isArray(exponentialData.subsections)) {
+            exponentialData.subsections.forEach(s => {
+                const prefixedId = `exponential-${s.id}`;
+                // Only add if not already present
+                if (!kaliEduData.topics.functions.subsections.find(x => x.id === prefixedId)) {
+                    kaliEduData.topics.functions.subsections.push({ id: prefixedId, title: s.title, icon: s.icon });
+                }
+            });
+        }
+
+        // Add each subsection's content under the prefixed key so it renders like other subsections
         if (exponentialData.subsectionContent) {
-            for (const key of Object.keys(exponentialData.subsectionContent)) {
-                const part = exponentialData.subsectionContent[key];
-                combined += `<h3>${part.title}</h3>` + (part.content || '');
+            for (const [key, part] of Object.entries(exponentialData.subsectionContent)) {
+                const prefixedKey = `exponential-${key}`;
+                // Only set if not already defined (preserve existing overrides)
+                if (!kaliEduData.topics.functions.subsectionContent[prefixedKey]) {
+                    kaliEduData.topics.functions.subsectionContent[prefixedKey] = {
+                        title: part.title || '',
+                        content: part.content || '',
+                        remember: Array.isArray(part.remember) ? part.remember : [],
+                        consider: Array.isArray(part.consider) ? part.consider : []
+                    };
+                }
             }
         }
 
-        kaliEduData.topics.functions.subsectionContent['exponential-functions'] = {
-            title: exponentialData.title || 'Exponential Functions',
-            content: combined,
-            remember: [],
-            consider: []
-        };
-
-        // Optionally attach practice problems from exponentialData into functions practice (append)
+        // Append practice problems from exponentialData into functions practice (append), avoiding id collisions
         if (Array.isArray(exponentialData.practice) && exponentialData.practice.length > 0) {
             if (!Array.isArray(kaliEduData.topics.functions.practice)) kaliEduData.topics.functions.practice = [];
-            // avoid id collisions by offsetting ids if necessary (assume numeric ids)
             const existingIds = new Set(kaliEduData.topics.functions.practice.map(p => p.id));
             exponentialData.practice.forEach(p => {
                 let newP = Object.assign({}, p);
@@ -250,5 +251,57 @@ if (typeof kaliEduData !== 'undefined' && kaliEduData && kaliEduData.topics) {
                 kaliEduData.topics.functions.practice.push(newP);
             });
         }
+
+        // Remove any accidentally-added exponential 'practice' subsection variants
+        kaliEduData.topics.functions.subsections = kaliEduData.topics.functions.subsections.filter(s => !/^exponential-.*practice/.test(s.id));
+
+        // Ensure the pre-existing 'practice' subsection (id === 'practice') is the last item in the list
+        const practiceIndex = kaliEduData.topics.functions.subsections.findIndex(s => s.id === 'practice');
+        if (practiceIndex !== -1) {
+            const [practiceItem] = kaliEduData.topics.functions.subsections.splice(practiceIndex, 1);
+            kaliEduData.topics.functions.subsections.push(practiceItem);
+        }
+
+        // Combine exponential prefixed subsections (basics, graphs, logs) into a single 'exponential-functions' subsection
+        (function combineExponentialSections() {
+            const contentKeys = ['exponential-basics', 'exponential-graphs-exp', 'exponential-logs'];
+            let combinedHtml = '';
+            let combinedRemember = [];
+            let combinedConsider = [];
+
+            contentKeys.forEach(key => {
+                const part = kaliEduData.topics.functions.subsectionContent[key];
+                if (part) {
+                    if (part.title) combinedHtml += `<h3>${part.title}</h3>`;
+                    combinedHtml += part.content || '';
+                    if (Array.isArray(part.remember)) combinedRemember = combinedRemember.concat(part.remember);
+                    if (Array.isArray(part.consider)) combinedConsider = combinedConsider.concat(part.consider);
+
+                    // remove the old key
+                    delete kaliEduData.topics.functions.subsectionContent[key];
+                }
+            });
+
+            if (combinedHtml) {
+                // Add consolidated subsection content
+                kaliEduData.topics.functions.subsectionContent['exponential-functions'] = {
+                    title: 'Exponential Functions',
+                    content: combinedHtml,
+                    remember: combinedRemember,
+                    consider: combinedConsider
+                };
+
+                // Remove individual prefixed subsection entries from the subsections list
+                kaliEduData.topics.functions.subsections = kaliEduData.topics.functions.subsections.filter(s => !contentKeys.includes(s.id));
+
+                // Insert a single subsection entry for the consolidated Exponential Functions, placing it before applications if present
+                const appsIndex = kaliEduData.topics.functions.subsections.findIndex(s => s.id === 'exponential-applications' || s.id === 'exponential-applications');
+                const insertIndex = appsIndex !== -1 ? appsIndex : kaliEduData.topics.functions.subsections.length;
+                // avoid duplicates
+                if (!kaliEduData.topics.functions.subsections.find(s => s.id === 'exponential-functions')) {
+                    kaliEduData.topics.functions.subsections.splice(insertIndex, 0, { id: 'exponential-functions', title: 'Exponential Functions', icon: '📊' });
+                }
+            }
+        })();
     }
 }

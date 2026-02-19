@@ -949,29 +949,52 @@ em {
 /* Subsection Content */
 .subsection-content {
     display: none;
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--sepia-dark);
 }
 
 .subsection-content.active {
     display: block;
 }
 
+/* Headings inside subsections follow the topic style */
+.subsection-content h2,
 .subsection-content h3 {
     color: var(--accent-blue-dark);
-    margin: var(--spacing-xl) 0 var(--spacing-md);
+    margin: var(--spacing-lg) 0 var(--spacing-md);
 }
 
-.subsection-content h3:first-child {
+.subsection-content h2 {
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px solid var(--sepia-dark);
+}
+
+.subsection-content h3:first-child,
+.subsection-content h2:first-child {
     margin-top: 0;
 }
 
 .subsection-content .formula {
     font-family: var(--font-mono);
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     background: var(--sepia-medium);
     padding: var(--spacing-md) var(--spacing-lg);
     border-radius: var(--radius-md);
     text-align: center;
     margin: var(--spacing-lg) 0;
+}
+
+/* Ensure tip boxes inside subsections are spaced and full-width */
+.subsection-content .tip-box {
+    margin-top: var(--spacing-md);
+}
+
+.subsection-content .remember-box,
+.subsection-content .consider-box {
+    width: 100%;
 }
 
 /* Getting Started Page */
