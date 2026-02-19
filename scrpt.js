@@ -258,75 +258,37 @@
         }
 
         const topic = kaliEduData.topics.functions;
-        
-        // Build subsections navigation
-        const subsectionsNav = topic.subsections.map(sub => `
+        // Build subsections navigation dynamically (supports added subsections)
+        const subsectionsNav = (topic.subsections || []).map(sub => `
             <button class="subsection-btn" data-subsection="${sub.id}" onclick="showSubsection('${sub.id}')">
-                <span class="subsection-icon">${sub.icon}</span>
+                <span class="subsection-icon">${sub.icon || ''}</span>
                 <span>${sub.title}</span>
             </button>
         `).join('');
 
-        // Build content for each subsection
+        // Build content for each subsection from data (preserves flexibility)
         let subsectionsContentHTML = '';
-        
-        // Introduction to Functions
-        const introContent = topic.subsectionContent['intro-functions'];
-        subsectionsContentHTML += `
-            <div class="subsection-content" id="subsection-intro-functions">
-                <h2>${introContent.title}</h2>
-                ${introContent.content}
-                ${renderTipBoxes(introContent.remember, introContent.consider)}
-            </div>
-        `;
+        if (topic.subsectionContent) {
+            for (const [subId, subData] of Object.entries(topic.subsectionContent)) {
+                subsectionsContentHTML += `
+                    <div class="subsection-content" id="subsection-${subId}">
+                        <h2>${subData.title}</h2>
+                        ${subData.content}
+                        ${renderTipBoxes(subData.remember, subData.consider)}
+                    </div>
+                `;
+            }
+        }
 
-        // Function Notation
-        const notationContent = topic.subsectionContent['function-notation'];
-        subsectionsContentHTML += `
-            <div class="subsection-content" id="subsection-function-notation">
-                <h2>${notationContent.title}</h2>
-                ${notationContent.content}
-                ${renderTipBoxes(notationContent.remember, notationContent.consider)}
-            </div>
-        `;
-
-        // Domain and Range
-        const domainContent = topic.subsectionContent['domain-range'];
-        subsectionsContentHTML += `
-            <div class="subsection-content" id="subsection-domain-range">
-                <h2>${domainContent.title}</h2>
-                ${domainContent.content}
-                ${renderTipBoxes(domainContent.remember, domainContent.consider)}
-            </div>
-        `;
-
-        // Linear Functions
-        const linearContent = topic.subsectionContent['linear-functions'];
-        subsectionsContentHTML += `
-            <div class="subsection-content" id="subsection-linear-functions">
-                <h2>${linearContent.title}</h2>
-                ${linearContent.content}
-                ${renderTipBoxes(linearContent.remember, linearContent.consider)}
-            </div>
-        `;
-
-        // Quadratic Functions
-        const quadContent = topic.subsectionContent['quadratic-functions'];
-        subsectionsContentHTML += `
-            <div class="subsection-content" id="subsection-quadratic-functions">
-                <h2>${quadContent.title}</h2>
-                ${quadContent.content}
-                ${renderTipBoxes(quadContent.remember, quadContent.consider)}
-            </div>
-        `;
-
-        // Practice Questions
-        const practiceHTML = `
-            <div class="subsection-content" id="subsection-practice">
-                <h2>✨ Practice Questions</h2>
-                ${renderPracticeQuestions(topic.practice)}
-            </div>
-        `;
+        // Add practice questions if available
+        if (topic.practice && topic.practice.length > 0) {
+            subsectionsContentHTML += `
+                <div class="subsection-content" id="subsection-practice">
+                    <h2>✨ Practice Questions</h2>
+                    ${renderPracticeQuestions(topic.practice)}
+                </div>
+            `;
+        }
 
         functionsSection.innerHTML = `
             <div class="topic-header">
@@ -343,14 +305,15 @@
             </div>
 
             ${subsectionsContentHTML}
-            ${practiceHTML}
         `;
 
         functionsSection.style.display = 'block';
         setTimeout(() => {
             functionsSection.classList.add('visible');
-            // Show first subsection by default
-            showSubsection('intro-functions');
+            // Show first subsection by default (use first from topic.subsections)
+            if (topic.subsections && topic.subsections.length > 0) {
+                showSubsection(topic.subsections[0].id);
+            }
         }, 10);
     }
 
